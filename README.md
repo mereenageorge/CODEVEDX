@@ -4,15 +4,15 @@ PopcornHub is a movie search website made using React and Vite where users can s
 
 ## ✨ Features
 
-- 🔍 Search any movie
-- 🎬 View movie posters
-- ⭐ Check IMDb ratings
-- 📄 Movie details popup
-- ❤️ Add movies to favorites
-- ❌ Remove movies from favorites
-- 🌙 Dark mode interface
-- 🔄 Dynamic movie fetching using API
-- 🛣️ React Router navigation
+-  Search any movie
+-  View movie posters
+-  Check IMDb ratings
+-  Movie details popup
+-  Add movies to favorites
+-  Remove movies from favorites
+-  Dark mode interface
+-  Dynamic movie fetching using API
+-  React Router navigation
 
 ## 🛠️ Technologies Used
 
@@ -30,7 +30,7 @@ npm install
 npm run dev
 ```
 
-## 📚 What I Learned
+## What I Learned
 
 Through this project I learned:
 
@@ -41,6 +41,6 @@ Through this project I learned:
 - Favorites handling using localStorage
 - GitHub basics and project deployment
 
-## 👩‍💻 Created By
+##  Created By
 
 Mereena George
