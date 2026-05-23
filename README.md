@@ -1,16 +1,46 @@
-# React + Vite
+# 🍿 PopcornHub
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+PopcornHub is a movie search website made using React and Vite where users can search movies, view ratings, check movie details, and save favorite movies.
 
-Currently, two official plugins are available:
+## ✨ Features
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+- 🔍 Search any movie
+- 🎬 View movie posters
+- ⭐ Check IMDb ratings
+- 📄 Movie details popup
+- ❤️ Add movies to favorites
+- ❌ Remove movies from favorites
+- 🌙 Dark mode interface
+- 🔄 Dynamic movie fetching using API
+- 🛣️ React Router navigation
 
-## React Compiler
+## 🛠️ Technologies Used
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+- React JS
+- Vite
+- CSS
+- React Router DOM
+- Axios
+- OMDb API
 
-## Expanding the ESLint configuration
+## ▶️ Run Project
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+```bash
+npm install
+npm run dev
+```
+
+## 📚 What I Learned
+
+Through this project I learned:
+
+- API fetching in React
+- React state management
+- Dynamic UI rendering
+- Routing using React Router
+- Favorites handling using localStorage
+- GitHub basics and project deployment
+
+## 👩‍💻 Created By
+
+Mereena George
