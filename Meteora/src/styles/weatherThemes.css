@@ -1,0 +1,355 @@
+/* BACKGROUND ANIMATION */
+
+.app{
+
+  transition:
+  background 3s ease,
+  filter 2s ease;
+
+  background-size:400% 400%;
+
+  animation:bgShift 15s ease infinite;
+}
+
+@keyframes bgShift{
+
+  0%{
+    background-position:left;
+  }
+
+  50%{
+    background-position:right;
+  }
+
+  100%{
+    background-position:left;
+  }
+
+}
+
+/* SUNNY */
+
+.sunny{
+  background:
+  linear-gradient(
+    to top,
+    #f6b73c 0%,
+    #fdd76e 40%,
+    #87ceeb 100%
+  );
+}
+
+/* CLOUDY */
+
+.cloudy{
+  background:
+  linear-gradient(
+    to top,
+    #4b5563,
+    #7c8794,
+    #cbd5e1
+  );
+}
+
+/* RAINY */
+
+.rainy{
+  background:
+  linear-gradient(
+    to top,
+    #1e293b,
+    #334155,
+    #475569
+  );
+}
+
+/* THUNDER */
+
+.thunderstorm{
+  background:
+  linear-gradient(
+    to top,
+    #020617,
+    #0f172a,
+    #1e293b
+  );
+}
+
+/* SNOW */
+
+.snow{
+  background:
+  linear-gradient(
+    to top,
+    #4b5d6b 0%,
+    #6f8595 35%,
+    #aab7c4 100%
+  );
+}
+
+/* SUNNY GLOW */
+
+.sun-glow{
+  position:absolute;
+
+  top:5%;
+  right:5%;
+
+  width:350px;
+  height:350px;
+
+  border-radius:50%;
+
+  background:
+  radial-gradient(
+    circle,
+    rgba(255,255,180,0.95),
+    rgba(255,200,0,0.45),
+    transparent 70%
+  );
+
+  filter:blur(10px);
+
+  animation:sunPulse 8s infinite alternate;
+
+  z-index:0;
+}
+
+@keyframes sunPulse{
+
+  from{
+    transform:scale(1);
+  }
+
+  to{
+    transform:scale(1.2);
+  }
+
+}
+
+/* SUNNY PARTICLES */
+
+.sun-particles{
+  position:absolute;
+  inset:0;
+  overflow:hidden;
+  z-index:1;
+}
+
+.sun-particles span{
+  position:absolute;
+
+  width:8px;
+  height:8px;
+
+  background:
+  rgba(255,255,255,0.6);
+
+  border-radius:50%;
+
+  filter:blur(1px);
+
+  animation:sunnyFloat linear infinite;
+}
+
+@keyframes sunnyFloat{
+
+  0%{
+    transform:
+    translateY(100vh)
+    translateX(0);
+
+    opacity:0;
+  }
+
+  20%{
+    opacity:1;
+  }
+
+  100%{
+    transform:
+    translateY(-20vh)
+    translateX(40px);
+
+    opacity:0;
+  }
+
+}
+
+/* CLOUDS */
+
+.clouds{
+  position:absolute;
+
+  width:300%;
+  height:100%;
+
+  background:
+  url("https://images.unsplash.com/photo-1534088568595-a066f410bcda?q=80&w=2070&auto=format&fit=crop");
+
+  background-size:cover;
+  background-position:center;
+
+  opacity:0.18;
+
+  filter:blur(2px);
+
+  animation:cloudMove 80s linear infinite;
+
+  z-index:0;
+}
+
+@keyframes cloudMove{
+
+  from{
+    transform:translateX(0);
+  }
+
+  to{
+    transform:translateX(-35%);
+  }
+
+}
+
+/* RAIN */
+
+.rain{
+  position:absolute;
+  inset:0;
+  overflow:hidden;
+  z-index:2;
+}
+
+.rain span{
+  position:absolute;
+
+  top:-20vh;
+
+  width:2px;
+  height:140px;
+
+  background:
+  linear-gradient(
+    transparent,
+    rgba(255,255,255,0.7)
+  );
+
+  opacity:0.45;
+
+  transform:rotate(12deg);
+
+  animation:stormRain linear infinite;
+}
+
+@keyframes stormRain{
+
+  from{
+    transform:
+    translateY(-20vh)
+    translateX(0)
+    rotate(12deg);
+  }
+
+  to{
+    transform:
+    translateY(120vh)
+    translateX(-120px)
+    rotate(12deg);
+  }
+
+}
+
+/* LIGHTNING */
+
+.lightning{
+  position:absolute;
+  inset:0;
+
+  background:
+  linear-gradient(
+    to bottom,
+    rgba(255,255,255,0.35),
+    rgba(255,255,255,0.05),
+    transparent 50%
+  );
+
+  opacity:0;
+
+  mix-blend-mode:screen;
+
+  animation:stormFlash 9s infinite;
+
+  z-index:3;
+}
+
+@keyframes stormFlash{
+
+  0%{
+    opacity:0;
+  }
+
+  1%{
+    opacity:0.9;
+  }
+
+  2%{
+    opacity:0;
+  }
+
+  3%{
+    opacity:0.5;
+  }
+
+  4%{
+    opacity:0;
+  }
+
+  100%{
+    opacity:0;
+  }
+
+}
+
+/* SNOW */
+
+.snow{
+  position:absolute;
+  inset:0;
+  overflow:hidden;
+  z-index:2;
+}
+
+.snow span{
+  position:absolute;
+
+  top:-10vh;
+
+  background:white;
+
+  border-radius:50%;
+
+  opacity:0.9;
+
+  box-shadow:
+  0 0 8px rgba(255,255,255,0.8);
+
+  animation:snowDrift linear infinite;
+}
+
+@keyframes snowDrift{
+
+  0%{
+    transform:
+    translateY(-10vh)
+    translateX(0px)
+    rotate(0deg);
+  }
+
+  100%{
+    transform:
+    translateY(110vh)
+    translateX(-30px)
+    rotate(360deg);
+  }
+
+}
