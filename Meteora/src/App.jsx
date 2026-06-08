@@ -62,8 +62,7 @@ function App() {
 
     if(city === "") return
 
-    const apiKey =
-    "7d6aa75a156e6188517502d770e6d884"
+   const apiKey = import.meta.env.VITE_WEATHER_API_KEY
 
     const url =
     `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${apiKey}&units=metric`
