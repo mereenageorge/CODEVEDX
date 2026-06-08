@@ -2,7 +2,7 @@
 
 ## Projects
 
-### 1. Movie Recommendation App
+### 1. Movie Search App
 Folder: popcornhub
 
 ### 2. Weather App
